@@ -1,0 +1,112 @@
+# Dynamic Dashboard with Vite, React, and Chart.js
+
+This project is a dynamic dashboard built with React and Vite. It allows users to create and manage widgets within various categories. Widgets can be either text-based or charts, with support for different chart types such as bar and pie charts. Users can dynamically add and remove widgets, select chart types, and input multiple data points.
+
+## Features
+
+- **Dynamic Widget Management**: Add or remove widgets within categories.
+- **Text and Chart Widgets**: Support for both text-based widgets and chart widgets.
+- **Multiple Chart Types**: Users can select between bar and pie charts.
+- **Data Input**: Users can input multiple data points and labels for chart widgets.
+- **Search Functionality**: Search through the list of widgets.
+
+## Getting Started
+
+### 1. **Set Up React with Vite**
+
+1. **Create a New Project**:
+   - Open your terminal and run the following command to create a new Vite project:
+     ```bash
+     npm create vite@latest
+     ```
+   - When prompted, enter a project name. For example, you can name your project `Widget`.
+
+2. **Navigate to the Project Directory**:
+   - Move into your newly created project directory:
+     ```bash
+     cd Widget
+     ```
+
+3. **Install Dependencies**:
+   - Once inside the project directory, install the necessary dependencies by running:
+     ```bash
+     npm install
+     ```
+
+   - This will set up all the necessary files and dependencies required for your project.
+
+### 2. **Set Up Project Files**
+
+project file structure
+├── src/
+│ ├── components/
+│ │ ├── Dashboard.jsx
+│ │ ├── Widget.jsx
+│ │ ├── ChartWidget.jsx
+│ ├── App.jsx
+│ ├── App.css
+│ ├── index.css
+│ ├── main.jsx
+
+Next, you'll need to add the code to create the dynamic dashboard. Follow these steps to organize your files:
+
+1. **Create the Components Directory**:
+   - Inside the `src` folder, create a new directory called `components`.
+
+2. **Add the Code**:
+   - Copy and paste the provided code into the following files:
+     - **App.jsx**: Main application file.
+     - **main.jsx**: Entry point of the React application.
+     - **Dashboard.jsx**: Component for the dashboard where users can add and manage widgets.
+     - **Widget.jsx**: Component for displaying text widgets.
+     - **ChartWidget.jsx**: Component for displaying chart widgets.
+   - Create the necessary components and add the corresponding code.
+
+### 3. **Run the Project**
+
+1. **Start the Development Server**:
+   - After setting up the files, start your development server by running:
+     ```bash
+     npm run dev
+     ```
+   - The application will be available at `http://localhost:5173`.
+
+2. **Interact with the Dashboard**:
+   - Open your browser and navigate to `http://localhost:5173` to view your dynamic dashboard.
+   - You can now add, remove, and customize widgets, including selecting chart types and inputting multiple data points.
+
+### 4. **Usage**
+
+1. **Adding a Widget**:
+   - Click on the "Add Widget" button within any category.
+   - Enter the widget name and select the widget type (text or chart).
+   - For text widgets, input the content.
+   - For chart widgets, choose the chart type (bar or pie), and enter labels and data points.
+
+2. **Removing a Widget**:
+   - Click the cross icon (`×`) on the widget to remove it from the category.
+
+3. **Searching Widgets**:
+   - Use the search functionality to filter through the widgets.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast development build tool.
+- **Chart.js**: A flexible JavaScript charting library.
+- **react-chartjs-2**: React wrapper for Chart.js.
+
+## Customization
+
+- **Adding More Chart Types**:
+  - You can extend the `ChartWidget.jsx` component to include more chart types supported by Chart.js, such as line charts, radar charts, etc.
+
+- **Styling**:
+  - Modify `App.css` and `index.css` to customize the look and feel of the dashboard.
+
+## Contributing
+
+Feel free to submit issues or pull requests if you would like to contribute to this project.
+
+## License
+
